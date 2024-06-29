@@ -1,0 +1,11 @@
+services:
+  db:
+    image: 'postgres:15.4'
+    container_name: youautolocal
+    restart: always
+    environment:
+      - POSTGRES_DB=mail
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+    ports:
+      - '5432:5432'

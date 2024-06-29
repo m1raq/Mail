@@ -1,0 +1,10 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: cloud-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/m1raq/mail-config.git

@@ -1,0 +1,6 @@
+rootProject.name = 'demo'
+
+includeBuild 'eureka-server'
+includeBuild 'api-gateway'
+includeBuild 'auth-service'
+includeBuild 'cloud-config'
