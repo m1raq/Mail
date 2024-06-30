@@ -5,6 +5,14 @@ spring:
     name: api-gateway
   cloud:
     gateway:
+#      routes:
+#        auth-service:
+#          uri: http://auth-service:8080
+#          predicates:
+#            - Path=/auth-service/**
+#          filters:
+#            - RewritePath=/auth-service/{path}, /${path}
+#          basePath: /auth-service
       discovery:
         locator:
           enabled: true
