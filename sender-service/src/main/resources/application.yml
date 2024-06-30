@@ -1,0 +1,12 @@
+server:
+  port: 0
+
+spring:
+  application:
+    name: sender-service
+  cloud:
+      config:
+        uri: http://localhost:8888
+  jpa:
+    hibernate:
+      ddl-auto: create
